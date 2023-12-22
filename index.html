@@ -8,18 +8,23 @@
       cursor: pointer;
   }
   .state-div {
-      display: none;
-  }
+            display: none;
+            transform: translateX(100%);
+            opacity: 0;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Animation duration and easing */
+        }
   #ksa {
       display: block;
   }
+
+  
 </style>
 <body>
 
 
 <div class="w3-container">
-  <h2>Mobile First Responsiveness</h2>
-  <p class="w3-large">Try to resize the window!</p>
+  <h2>The Saudi Traditional Dresses Guide</h2>
+  <p class="w3-large">Click on any State to see people traditional dresses of the state </p>
 </div>
 
 <div class="w3-row w3-border">
@@ -416,6 +421,7 @@
       const svg = document.getElementById('ksa_map');
     const stateDivs = document.querySelectorAll('.state-div');
     const defaultDiv = document.getElementById('ksa');
+    let currentSpeechUtterance = null;
 
     // Add click event listener to the SVG
     svg.addEventListener('click', function (event) {
@@ -430,10 +436,17 @@
             // Display the corresponding state div based on the target div ID
             const targetDiv = document.getElementById(targetDivId);
             if (targetDiv) {
+
                 targetDiv.style.display = 'block';
+                // Trigger the animation by accessing the offsetHeight property
+                targetDiv.offsetHeight;
+                targetDiv.style.transform = 'translateX(0)';
+                targetDiv.style.opacity = '1';
+
                 speak(targetDiv.textContent);
                 resetAllPathColors();
                 changePathColor(event.target);
+
             }
         } else {
             // If no path is clicked, display the default div
@@ -446,6 +459,8 @@
     function hideAllStateDivs() {
         stateDivs.forEach(div => {
             div.style.display = 'none';
+            div.style.transform = 'translateX(100%)';
+            div.style.opacity = '0';
         });
         defaultDiv.style.display = 'none';
     }
@@ -461,8 +476,10 @@
     }
 
     function speak(text) {
+        window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
         window.speechSynthesis.speak(utterance);
+        return utterance;
     }
 </script>
 
