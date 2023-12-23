@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>KSA States Dresses</title>
@@ -11,6 +11,7 @@
 
         svg {
             cursor: pointer;
+            z-index: 2; /* Set z-index to position SVG above other elements */
         }
 
         .state-div {
@@ -23,6 +24,16 @@
         #ksa {
             display: block;
         }
+
+        .pin {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background: url('pin.png') no-repeat;
+            background-size: cover;
+            display: none;
+        }
+
     </style>
 </head>
 
@@ -326,6 +337,8 @@
                            style="stroke:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
                            id="tspan104">Makkah</tspan>
                 </text>
+                <g id="pinGroup" x="0" y="0" class="pin" style="display: none;"></g>
+
             </svg>
 
 
@@ -334,71 +347,132 @@
             <div id="ksa" class="state-div">
                 <h1>Saudi Arabia</h1>
                 <p>Saudi Arabia is a desert country encompassing most of the Arabian Peninsula, with Red Sea and Persian (Arabian) Gulf coastlines. Known as the birthplace of Islam, it’s home to the religion’s 2 most sacred mosques: Masjid al-Haram, in Mecca, destination of the annual Hajj pilgrimage, and Medina’s Masjid an-Nabawi, burial site of the prophet Muhammad. Riyadh, the capital, is a skyscraper-filled metropolis.</p>
+                <img src="ksa.png" />
             </div>
 
             <div id="assir" class="state-div">
+
                 <h1>Assir</h1>
                 <p>Assir state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="sc.png" alt="img" /></div>
+                    <div class="slide"><img src="sc2.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="riyadh" class="state-div">
+
                 <h1>Riyadh</h1>
                 <p>Riyadh state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="cc.png" alt="img" /></div>
+                    <div class="slide"><img src="cc2.png" alt="img" /></div>
+                    <div class="slide"><img src="cc3.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="makkah" class="state-div">
+
                 <h1>Makkah</h1>
                 <p>Makkah state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="wc.png" alt="img" /></div>
+                    <div class="slide"><img src="wc2.png" alt="img" /></div>
+                    <div class="slide"><img src="cc3.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="madina" class="state-div">
                 <h1>Madina</h1>
                 <p>Madina state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="wc.png" alt="img" /></div>
+                    <div class="slide"><img src="wc2.png" alt="img" /></div>
+                    <div class="slide"><img src="cc3.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="qassim" class="state-div">
                 <h1>Qassim</h1>
                 <p>Qassim state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="cc.png" alt="img" /></div>
+                    <div class="slide"><img src="cc2.png" alt="img" /></div>
+                    <div class="slide"><img src="cc3.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="jouf" class="state-div">
                 <h1>Al-Jauf</h1>
                 <p>Al-Jauf state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="nc.png" alt="img" /></div>
+                    <div class="slide"><img src="nc2.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="tabuk" class="state-div">
                 <h1>Tabuk</h1>
                 <p>Tabuk state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="nc.png" alt="img" /></div>
+                    <div class="slide"><img src="nc2.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="bahah" class="state-div">
                 <h1>Al-Bahah</h1>
                 <p>Al-Bahah state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="sc.png" alt="img" /></div>
+                    <div class="slide"><img src="sc2.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="hail" class="state-div">
                 <h1>Hail</h1>
                 <p>Hail state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="cc.png" alt="img" /></div>
+                    <div class="slide"><img src="cc2.png" alt="img" /></div>
+                    <div class="slide"><img src="cc3.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="north_border" class="state-div">
                 <h1>the North borders</h1>
                 <p>the North borders state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="nc.png" alt="img" /></div>
+                    <div class="slide"><img src="nc2.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="najran" class="state-div">
                 <h1>Najran</h1>
                 <p>Najran state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="sc.png" alt="img" /></div>
+                    <div class="slide"><img src="sc2.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="jazan" class="state-div">
                 <h1>Jazan</h1>
                 <p>Jazan state is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="sc.png" alt="img" /></div>
+                    <div class="slide"><img src="sc2.png" alt="img" /></div>
+                </div>
             </div>
 
             <div id="eastren" class="state-div">
                 <h1>The Eastren State</h1>
                 <p>The Eastren State  is in the south of Saudi Arabia.</p>
+                <div class="slides slowFade">
+                    <div class="slide"><img src="ec.png" alt="img" /></div>
+                    <div class="slide"><img src="ec2.png" alt="img" /></div>
+                </div>
             </div>
 
         </div>
@@ -410,6 +484,7 @@
         const stateDivs = document.querySelectorAll('.state-div');
         const defaultDiv = document.getElementById('ksa');
         let currentSpeechUtterance = null;
+
 
         // Add click event listener to the SVG
         svg.addEventListener('click', function (event) {
@@ -434,12 +509,18 @@
                     speak(targetDiv.textContent);
                     resetAllPathColors();
                     changePathColor(event.target);
+                    movePin(event.target);
+
 
                 }
             } else {
                 // If no path is clicked, display the default div
                 hideAllStateDivs();
+                resetAllPathColors();
                 defaultDiv.style.display = 'block';
+                defaultDiv.style.transform = 'translateX(0)';
+                defaultDiv.style.opacity = '1';
+                speak(defaultDiv.textContent);
             }
         });
 
@@ -460,6 +541,7 @@
             });
         }
         function changePathColor(path) {
+
             path.style.fill = 'yellow'; // Change the fill color of the clicked path
         }
 
@@ -469,6 +551,16 @@
             window.speechSynthesis.speak(utterance);
             return utterance;
         }
+
+        function movePin(path) {
+            const pin = pinGroup.querySelector('.pin');
+            const pathBoundingBox = path.getBoundingClientRect();
+            pin.setAttribute('x', pathBoundingBox.left + window.scrollX - 10); // Adjust position based on pin size
+            pin.setAttribute('y', pathBoundingBox.top + window.scrollY - 10);
+            pin.style.display = 'block';
+        }
+
+
     </script>
 
 </body>
