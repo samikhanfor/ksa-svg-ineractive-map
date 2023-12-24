@@ -1,7 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>KSA States Dresses</title>
+    <title>KSA States Dresses - By The Salhiah High School</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
@@ -34,6 +34,23 @@
             display: none;
         }
 
+        .slider {
+            width: 300px; /* تعديل العرض حسب احتياجاتك */
+            overflow: hidden;
+        }
+
+        .slide {
+            visibility: hidden;
+            transition: visibility 1s ease-in-out;
+        }
+
+        .slide-active {
+            visibility: visible;
+        }
+
+        .slide img {
+            position: fixed;
+        }
     </style>
 </head>
 
@@ -50,7 +67,7 @@
             <svg id="ksa_map"
                  height="700"
                  version="1.1"
-                 width="700"
+                 width="100%"
                  style="overflow: hidden; position: relative; left: -0.109375px;"
                  viewBox="0 0 700.4 578.4"
                  preserveAspectRatio="xMinYMin"
@@ -353,9 +370,9 @@
             <div id="assir" class="state-div">
 
                 <h1>Assir</h1>
-                <p>Assir state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="sc.png" alt="img" /></div>
+                <p>Assir state is surrounded by Mecca Province to the north and west, Al-Bahah Province to the northwest, Riyadh Province to the northeast, Najran Province to the southeast, and Jazan Province and the Yemeni Muhafazah (Governorate of Sa'dah to the south.</p>
+                <div class="slider" id="1">
+                    <div class="slide slide-active"><img src="sc.png" alt="img" /></div>
                     <div class="slide"><img src="sc2.png" alt="img" /></div>
                 </div>
             </div>
@@ -363,9 +380,9 @@
             <div id="riyadh" class="state-div">
 
                 <h1>Riyadh</h1>
-                <p>Riyadh state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="cc.png" alt="img" /></div>
+                <p>Riyadh is a province of Saudi Arabia, located in the geographic center of the country .</p>
+                <div class="slider" id="2">
+                    <div class="slide slide-active"><img src="cc.png" alt="img" /></div>
                     <div class="slide"><img src="cc2.png" alt="img" /></div>
                     <div class="slide"><img src="cc3.png" alt="img" /></div>
                 </div>
@@ -374,9 +391,9 @@
             <div id="makkah" class="state-div">
 
                 <h1>Makkah</h1>
-                <p>Makkah state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="wc.png" alt="img" /></div>
+                <p>Makkah Province,is one of the 13 provinces of Saudi Arabia. It is the third-largest province by area .</p>
+                <div class="slider" id="3">
+                    <div class="slide slide-active"><img src="wc.png" alt="img" /></div>
                     <div class="slide"><img src="wc2.png" alt="img" /></div>
                     <div class="slide"><img src="cc3.png" alt="img" /></div>
                 </div>
@@ -384,9 +401,9 @@
 
             <div id="madina" class="state-div">
                 <h1>Madina</h1>
-                <p>Madina state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="wc.png" alt="img" /></div>
+                <p>Madina state is located on the western side, along the Red Sea coast.</p>
+                <div class="slider" id="4">
+                    <div class="slide slide-active"><img src="wc.png" alt="img" /></div>
                     <div class="slide"><img src="wc2.png" alt="img" /></div>
                     <div class="slide"><img src="cc3.png" alt="img" /></div>
                 </div>
@@ -394,9 +411,9 @@
 
             <div id="qassim" class="state-div">
                 <h1>Qassim</h1>
-                <p>Qassim state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="cc.png" alt="img" /></div>
+                <p>Qassim state has the lowest share of population living below local poverty line in Saudi Arabia.</p>
+                <div class="slider" id="5">
+                    <div class="slide slide-active"><img src="cc.png" alt="img" /></div>
                     <div class="slide"><img src="cc2.png" alt="img" /></div>
                     <div class="slide"><img src="cc3.png" alt="img" /></div>
                 </div>
@@ -404,36 +421,36 @@
 
             <div id="jouf" class="state-div">
                 <h1>Al-Jauf</h1>
-                <p>Al-Jauf state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="nc.png" alt="img" /></div>
+                <p>Al-Jauf state is located in the north of the country, partially bordered by Jordan to the west.</p>
+                <div class="slider" id="6">
+                    <div class="slide slide-active"><img src="nc.png" alt="img" /></div>
                     <div class="slide"><img src="nc2.png" alt="img" /></div>
                 </div>
             </div>
 
             <div id="tabuk" class="state-div">
                 <h1>Tabuk</h1>
-                <p>Tabuk state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="nc.png" alt="img" /></div>
+                <p>Tabuk state is located along the northwestern coast of the country, facing Egypt across the Red Sea.</p>
+                <div class="slider" id="7">
+                    <div class="slide slide-active"><img src="nc.png" alt="img" /></div>
                     <div class="slide"><img src="nc2.png" alt="img" /></div>
                 </div>
             </div>
 
             <div id="bahah" class="state-div">
                 <h1>Al-Bahah</h1>
-                <p>Al-Bahah state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="sc.png" alt="img" /></div>
+                <p>Al-Bahah state is the name of the province as well its main city, situated in the northwestern part of Ghamed territory.</p>
+                <div class="slider" id="8">
+                    <div class="slide slide-active"><img src="sc.png" alt="img" /></div>
                     <div class="slide"><img src="sc2.png" alt="img" /></div>
                 </div>
             </div>
 
             <div id="hail" class="state-div">
                 <h1>Hail</h1>
-                <p>Hail state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="cc.png" alt="img" /></div>
+                <p>Hail state is famous for the twin mountain ranges of 'Aja and Salma, and for being the homeland of historic symbol of curiosity and generosity.</p>
+                <div class="slider" id="9">
+                    <div class="slide slide-active"><img src="cc.png" alt="img" /></div>
                     <div class="slide"><img src="cc2.png" alt="img" /></div>
                     <div class="slide"><img src="cc3.png" alt="img" /></div>
                 </div>
@@ -441,35 +458,35 @@
 
             <div id="north_border" class="state-div">
                 <h1>the North borders</h1>
-                <p>the North borders state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="nc.png" alt="img" /></div>
+                <p>the North borders state is located in the north of the country, bordering Iraq and Jordan.</p>
+                <div class="slider" id="10">
+                    <div class="slide slide-active"><img src="nc.png" alt="img" /></div>
                     <div class="slide"><img src="nc2.png" alt="img" /></div>
                 </div>
             </div>
 
             <div id="najran" class="state-div">
                 <h1>Najran</h1>
-                <p>Najran state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="sc.png" alt="img" /></div>
+                <p>The name derives from Najran Ibn Zaidan Ibn Saba' Ibn Yashgub Ibn Yarub Ibn Qahtan, said to be the first person to inhabit the area.</p>
+                <div class="slider" id="11">
+                    <div class="slide slide-active"><img src="sc.png" alt="img" /></div>
                     <div class="slide"><img src="sc2.png" alt="img" /></div>
                 </div>
             </div>
 
             <div id="jazan" class="state-div">
                 <h1>Jazan</h1>
-                <p>Jazan state is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
-                    <div class="slide"><img src="sc.png" alt="img" /></div>
+                <p>Jazan state is the second smallest province of Saudi Arabia. It just north of Yemen.</p>
+                <div class="slider" id="12">
+                    <div class="slide slide-active"><img src="sc.png" alt="img" /></div>
                     <div class="slide"><img src="sc2.png" alt="img" /></div>
                 </div>
             </div>
 
             <div id="eastren" class="state-div">
                 <h1>The Eastren State</h1>
-                <p>The Eastren State  is in the south of Saudi Arabia.</p>
-                <div class="slides slowFade">
+                <p>The Eastren State is the largest province by area and the third most populous after the Riyadh Province and the Mecca Province.</p>
+                <div class="slider" id="13">
                     <div class="slide"><img src="ec.png" alt="img" /></div>
                     <div class="slide"><img src="ec2.png" alt="img" /></div>
                 </div>
@@ -477,7 +494,11 @@
 
         </div>
     </div>
-
+    <p>
+        This Project made by <br />
+        by Supervision of Mrs. <br />
+        Salhiah High school - jeddah .
+    </p>
     <script>
         // Get references to the SVG, state divs, and default div
         const svg = document.getElementById('ksa_map');
@@ -560,6 +581,38 @@
             pin.style.display = 'block';
         }
 
+
+        //-------------------
+        document.addEventListener("DOMContentLoaded", function () {
+            // تعريف مشغلات الصور
+            const sliders = document.querySelectorAll(".slider");
+
+            // تكرار عبر كل مشغل صور
+            sliders.forEach((slider) => {
+                const slides = slider.querySelectorAll(".slide");
+                let currentIndex = 0;
+
+                function showSlide(index) {
+                    slides.forEach((slide, i) => {
+                        if (i === index) {
+                            slide.classList.add("slide-active");
+                        } else {
+                            slide.classList.remove("slide-active");
+                        }
+                    });
+                }
+
+                function nextSlide() {
+                    currentIndex = (currentIndex + 1) % slides.length;
+                    showSlide(currentIndex);
+                }
+
+                setInterval(nextSlide, 5000); // تغيير الصور كل 5 ثواني
+
+                // عرض الصورة الأولى عند تحميل الصفحة
+                showSlide(currentIndex);
+            });
+        });
 
     </script>
 
